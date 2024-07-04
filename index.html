@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focal</title>
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css  -->
+     <link rel="stylesheet" href="css/style_index.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="custom-header py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <div><img class="w-50" src="images/header-bg.jpg" alt=""></div>
+        </div>
+        <nav class="space-x-6 text-white hidden lg:flex">
+            <a href="#" class="hover:underline">Shop by Category</a>
+            <a href="#" class="hover:underline">Shop by Device</a>
+            <a href="#" class="hover:underline">Collections</a>
+            <a href="#" class="hover:underline">Blog</a>
+        </nav>
+        <div class="flex space-x-4 text-white hidden lg:flex">
+            <div class="relative ">
+                <button  class="focus:outline-none">
+                    United States (USD $)
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+            </div>
+            <a href="#" class="hover:underline"><i class="fas fa-search"></i></a>
+            <a href="#" class="hover:underline"><i class="fas fa-user"></i></a>
+            <div class="relative">
+                <a href="#" class="hover:underline"><i class="fas fa-shopping-cart"></i></a>
+                <div class="absolute top-0 right-0 w-4 h-4 bg-red-500 rounded-full text-xs flex items-center justify-center text-white">1</div>
+            </div>
+        </div>
+        <div class="lg:hidden">
+            <button id="menuBtn" class="text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+        <div class="p-4">
+            <button id="closeMenuBtn" class="text-white focus:outline-none mb-4">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="space-y-2 text-white">
+                <a href="#" class="block">Shop by Category</a>
+                <a href="#" class="block">Shop by Device</a>
+                <a href="#" class="block">Collections</a>
+                <a href="#" class="block">Blog</a>
+                <div class="relative ">
+                    <button  class="block w-full text-left">
+                        United States (USD $)
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:underline"><i class="fas fa-search"></i></a>
+                    <a href="#" class="hover:underline"><i class="fas fa-user"></i></a>
+                    <div class="relative">
+                        <a href="#" class="hover:underline"><i class="fas fa-shopping-cart"></i></a>
+                        <div class="absolute top-0 right-0 w-4 h-4 bg-red-500 rounded-full text-xs flex items-center justify-center text-white">1</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/tom-dixon-lp-tile-1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                    <p>COLLABORATION</p>
+                    <h1>NATIVE UNION </h1>
+                    <h1>X TOM DIXON</h1>
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/blog-2.jpg" alt="Slide 2">
+                <div class="slide-content">
+                    <p>COLLABORATION</p>
+                    <h1>NATIVE UNION </h1>
+                    <h1>X TOM DIXON</h1>
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/blog-1.jpg" alt="Slide 3">
+                <div class="slide-content">
+                    <p>COLLABORATION</p>
+                    <h1>NATIVE UNION </h1>
+                    <h1>X TOM DIXON</h1>
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
